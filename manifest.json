@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "Stenography practice",
+    "short_name": "Stenography",
+    "description": "An app that allows practice of Stenography using a QWERTY keyboard",
+    "start_url": "/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "assets/512.jpg",
+            "sizes": "512x512"
+        }
+    ]
+}

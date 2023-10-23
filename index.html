@@ -4,6 +4,7 @@
 		
 		<title>Plover Pad</title>
 
+		<link rel="manifest" href="/manifest.json">
 		<!-- import jquery stuff -->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
@@ -12,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css">
 		<link rel="stylesheet" type="text/css" href="ploverdemo.css">
 	<style type="text/css">img[src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"]
+
 {display:none !important;}</style></head>
 	<body>
 		<!-- area to show output -->
@@ -142,4 +144,12 @@
 		<!-- do the steno thing! -->
 		<script type="text/javascript" src="ploverdemo.js"></script>
 	 
-</body></html>
+</body>
+
+<script>
+	if('serviceWorker' in navigator) {
+	  navigator.serviceWorker.register('/sw.js', { scope: '/' });
+	}
+	</script>
+
+</html>
